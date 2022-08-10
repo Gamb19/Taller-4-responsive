@@ -1,0 +1,807 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #0f3460;
+    height: 6vh;
+    width: 100%;
+}
+.bazar{
+    color: white;
+}
+#check{
+    display: none;
+}
+
+/**Mobile**/
+@media (min-width:468px) {
+   .sec-esc{
+    display: none;
+    }
+    
+    .header-nav-mo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .bazar{
+        font-size: 40px;
+        margin-left: 3%;
+    }
+    .nav-selects{
+        text-align: center;
+        padding: 17px 0px;
+        margin-left: 50%;
+    }
+    .nav-selects select{
+        border: none;
+        background-color: #0f3460;
+        color: white;
+        outline: none;
+        margin-right: 8%;
+    }
+    .bazar-busc{
+        display: none;
+    }
+    .buscador{
+    margin: 3% 0 0 3%;
+    display: grid;
+    grid-template-areas: 
+      "buscador menu-ha";
+    
+    }
+    .info-busc{
+        margin-top: 1%;
+        grid-area: buscador;
+    }
+    .main-input-busc{
+        width: 377px;
+        height: 50px;
+        border-radius: 100px;
+        border: 1px solid #dfe1e5;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .input-main{
+        margin-right: 5%;
+    }
+    .main-input-busc input{
+       margin: 0 0 0 2%;
+        width: 280px;
+        height: 25px;
+        outline: none;
+        border: none;
+    }
+    .main-input-busc button{
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        padding: 13px 12px;
+        border-radius: 0 100px 100px 0;
+        background: #4E97FD;
+        border: 1px solid #3C74C2;
+    }
+    .logo-main{
+        display: none;
+    }
+    .usuarios{
+        display: none;
+    }
+    .menu{
+        padding: 10px 0;
+        grid-area: menu-ha;
+    
+    }
+    .menu img{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border: 1px solid #e4e9ec;
+        border-radius: 100px;
+    }
+    .menu  ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #0f3460;
+        top: 135px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu  ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    .menu ul li select{
+        border: none;
+        background-color: #0f3460;
+        outline: none;
+        color: white;
+    }
+    .menu img.active{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ .ul-check{
+        left: 0;
+        top: 3;   
+    }
+    .list-nav-esc{
+        display: none;
+    }
+    .categories{
+        display: none;
+    }
+    .gray-space{
+        padding: 15px 0;
+        background-color: #efefef;
+        height: 300px;
+    }
+    .title-gray-space{
+        font-size: 20px;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .title-gray-space button{
+        margin-top: 5%;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 120px;
+        height: 40px;
+        background-color: #4E97FD;
+        color: white;
+        border: none;
+    }
+    .img-gray-space{
+        display: none;
+    }
+    .aside-shop {
+        padding: 20px 20px;
+    }
+    aside{
+        display: none;
+    }
+    .ps3{
+       display: flex;
+       margin-bottom: 5%;
+       border: 2px solid #f8f8f9;
+       border-radius: 10px;
+    }
+    .figcaption-ps3{
+        border-radius: 20px 100px 100px 20px;
+        background-color: #b8defe;
+        height: 200px;
+        text-align: center;
+        padding-top: 25%;
+       width: 200px;
+    }
+    .img-ps3 img,.img-ps4 img{
+        width: 230px;
+        height: 210px;
+    }
+    .ps4{
+        display: flex;
+        margin-bottom: 5%;
+        border: 2px solid #f8f8f9;
+        border-radius: 10px;
+    }
+    .figcaption-ps4{
+        height: 200px;
+        text-align: center;
+        padding-top: 25%;
+       width: 200px;
+    }
+    .figcaption-ps4 button{
+        margin-top: 5%;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 120px;
+        height: 40px;
+        background-color: #4E97FD;
+        color: white;
+        border: none;
+    }
+    .products-all{
+        padding-top: 10px;
+        display: grid;
+        grid-template-areas: 
+        "title-p title-p"
+        "control audifono";
+    }
+    .top-products-title{
+        grid-area: title-p;
+    }
+    .control, .audifono, .juego, .control-r, .juego1, .juego2, .juego3{
+        width: 200px;
+        height: 300px;
+        grid-area: control;
+        margin-top: 8%;
+        border: 2px solid #eef2f5;
+        border-radius: 5px;
+    }
+    .control figcaption, .audifono figcaption, .juego figcaption, .control-r figcaption, .juego1 figcaption, .juego2 figcaption, .juego3 figcaption{
+        border: 1px solid #eef2f5;
+    }
+    .audifono{
+        grid-area: audifono;
+    }
+    .juego{
+        grid-area: juego;
+        display: none;
+    }
+    .etiqueta{ background-color: #4E97FD;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.img-central{
+    width: 170px;
+    height: 170px;
+}
+.add{
+    background-color: #4E97FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+span{
+    color: #4E97FD;
+}
+.corazon{
+    background-color: #4E97FD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+}
+.top-products{
+   padding: 5% 0 0 3%;
+    display: grid;
+    grid-template-areas: 
+    "titulo-top"
+    "mando-r"
+    "juego1"
+    "juego2"
+    "juego3"
+    "load";
+}
+.top-products-title2{
+    grid-area: titulo-top;
+}
+.control-r, .juego1, .juego2, .juego3{
+    margin-top: 6%;
+    grid-area: mando-r;
+    width: 400px;
+    height: 400px;
+}
+.control-r figcaption, .juego1 figcaption, .juego2 figcaption, .juego3 figcaption{
+    margin-top: 2%;
+}
+.img-central-all{
+    width: 280px;
+    height: 260px;
+    margin-left: 10%;
+}
+.add-all{
+    background-color: #4E97FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 365px;
+    height: 35px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.juego1{
+    grid-area: juego1;
+}
+.juego2{
+    grid-area: juego2;
+}
+.juego3{
+    grid-area: juego3;
+}
+.load-more{
+    grid-area: load;
+   margin: 5% 0 0 24%;
+}
+.load-more button{
+    margin-top: 5%;
+     cursor: pointer;
+     border-radius: 5px;
+     width: 150px;
+     height: 40px;
+     background-color: #4E97FD;
+     color: white;
+     border: none;
+}
+.brands{
+    margin-top: 5%;
+}
+.brand1,.brand2, .brand3{
+    text-align: center;
+    border: 2px solid #eef2f5;
+    padding: 30px 150px 30px 150px;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.brand1 figure img, .brand2 figure img, .brand3 figure img{
+    background-color: #f6f9fc;
+    padding: 10px;
+    border-radius: 100px;
+}
+footer{
+    background-color: #0f3460;
+    border-radius: 15px;
+    margin-top: 10%;
+    height: 550px;
+}
+.titles-ft{
+    margin:5% 0 0 10%;
+    padding-top: 10%;
+}
+.titles-ft figure img{
+    width: 32px;
+    height: 32px;
+}
+.titles-ft h2{
+    color: white;
+    margin:3%;
+    font-size: 40px;
+}
+.titles-ft p{
+    color: white;
+    margin:3%;
+}
+.titles-ft figure{
+    display: inline-block;
+    margin: 4% 10% 0 0;
+    background-color: #0c2a4d;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3%;
+    padding: 6px;
+}
+.titles-ft figcaption{
+    display: inline-block;
+    color: white;
+}
+.titles-ft figcaption p{
+    font-size: 13px;
+}
+.icons-ft{
+    margin: 5% 0 0 12%;
+}
+.icons-ft ul li{
+    margin-bottom: 3%;
+}
+.icons-ft a{
+    text-decoration: none;
+    color: white;
+}
+}
+
+/**Tablet**/
+
+@media (min-width:768px) {
+    .nav-selects{
+        margin-left: 60%;
+    }
+    .menu ul{
+        top: 150px;
+    }
+    .buscador{
+        margin: 3% 0 0 3%;
+        display: grid;
+        grid-template-areas: 
+          "buscador buscador menu-ha";
+        
+        }
+    .menu img{
+        width: 40px;
+        height: 40px;
+    }
+    .main-input-busc {
+        width: 600px;
+       margin-left: 3%;
+    }
+    .main-input-busc input{
+        width: 497px;
+    }
+    .gray-space{
+        display: grid;
+        grid-template-areas: 
+        "button image-ps image-ps";
+        height: 350px;
+    }
+
+    .img-gray-space{
+        display: inline-flex;
+        width: 290px;
+        height: 270px;
+        grid-area: image-ps;
+       padding-left: 80px;
+    }
+    .title-gray-space{
+        padding: 60px 10px;
+        text-align: left;
+        font-size: 25px;
+    }
+    .title-gray-space button{
+        margin-top: 10%;
+    }
+    aside{
+        display: none;
+    }
+
+    .ps3-ps4-products{
+        grid-area: plays;
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-areas: "ps3 ps4";
+    }
+    .ps3{
+        margin-right: 1%;
+        grid-area: ps3;
+    }
+    .figcaption-ps3{
+        height: 170px;
+    }
+    .ps4{
+        grid-area: ps4;
+    }
+    .ps4 img, .img-ps3 img{
+        width: 170px;
+        height: 170px;
+    }
+    .juego{
+        display: block;
+    }
+    .products-all{
+        grid-template-areas: 
+        "title-p title-p title-p"
+        "control audifono juego";
+    }
+    .top-products{ 
+           grid-template-areas: 
+             "titulo-top titulo-top"
+             "mando-r juego1"
+             "juego2 juego3"
+             "load load";
+         }
+    
+     .control-r, .juego1, .juego2, .juego3{
+        margin-top: 6%;
+        width: 200px;
+        height: 200px;
+    }
+    .img-central-all{
+        margin: 0;
+        margin-left: 10%;
+        width: 165px;
+        height: 165px;
+    }
+    .control-r,.juego1,.juego2,.juego3{
+        width: 300px;
+        height: 300px;
+    }
+    .add-all{
+        width: 260px;
+    }
+    .load-more{
+        margin-left: 33%;
+    }
+    .brand1,.brand2, .brand3{
+         border: 2px solid #eef2f5;
+         padding: 30px 150px 30px 150px;
+         margin-top: 5%;
+         border-radius: 5px;
+     }
+     .brand1 figure, .brand2 figure, .brand3 figure{
+        display: flex;
+    }
+    footer{
+        display: grid;
+        grid-template-areas: 
+        "app-s help";
+    }
+    .titles-ft{
+        grid-area: app-s;
+    }
+    .icons-ft{
+        grid-area: help;
+    }
+    .icons-ft{
+        padding-top: 60px;
+    }
+    .icons-ft ul li{
+        padding-bottom: 10px;
+    }
+    footer{
+        height: auto;
+    }
+    .titles-ft{
+        padding: 0;
+    }
+}
+
+/**Pc**/
+@media (min-width:1048px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "none footer footer"
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .sec-esc{
+        display: block;
+    }
+    .info{
+        display: inline-flex;
+        padding: 15px 20px;
+        margin-left: 5%;
+    }
+    .info ul{
+        display: inline-flex;
+    }
+    .info img{
+        width: 20px;
+        height: 20px;
+        margin: 0 3% 0 3%;
+    }
+    .info p{
+        color: white;
+        margin:0 3% 0 2%;
+    }
+    .header-nav-mo{
+        display: none;
+    }
+    .nav-esc{
+        display: inline-flex;
+        float: right;
+    }
+    .navegador ul{
+        display: flex;
+        padding: 0 50px;
+    }
+    .navegador ul li, .navegador ul li a{
+    padding: 15px 20px;
+    color: white;
+    }
+    .navegador ul li select{
+        border: none;
+        background-color: #0f3460;
+        color: white;
+    }
+    /**Fin de header**/
+
+     /**Main**/
+     .buscador{
+        margin: 1% 0 3% 0;
+        display: grid;
+        grid-template-areas: 
+        "title buscador usuarios";
+    }
+    .bazar-busc{
+        display: inline-flex;
+        grid-area: title;
+    }
+    .bazar-busc h2{
+    font-size: 50px;
+    padding: 0 50px;
+    margin: 1% 0 0 15%;
+    color: #0f3460;
+    }
+    .info-busc{
+        display: flex;
+        grid-area: buscador;
+    }
+    .main-input-busc {
+        width: 710px;
+       margin-left: 3%;
+    }
+    .main-input-busc input{
+        width: 606px;
+    }
+    .usuarios{
+        display: inline-flex;
+        grid-area: usuarios;
+        justify-content: end;
+        gap: 20px;
+        padding: 13px 0 13px 10px;
+     }
+    .usuarios img{
+        width: 40px;
+        height: 40px;
+       gap: 20px;
+    }
+    .menu input, .menu label{
+        display: none;
+    }
+    .menu nav{
+        display: block;
+    }
+    .list-nav-esc{
+        display: grid;
+        margin-left: 5%;
+        grid-template-areas: 
+        "categories categories lista";
+    }
+    .categories{
+        display: inline-flex;
+        background-color: #f6f9fc;
+        padding: 6px 0;
+        width: 300px;
+        grid-area: categories;
+    }
+    .categories p{
+     padding: 10px 15px;
+    }
+    
+    .list-nav-esc ul{
+        grid-template-areas: lista;
+        display: flex;
+        gap: 30px;
+        margin-top: 2%;
+    }
+    .list-nav-esc nav ul select{
+        border: none;
+    }
+    .gray-space{
+        display: grid;
+        grid-template-areas: 
+        "button button image-ps";
+        height: 400px;
+    }
+
+    .img-gray-space{
+        display: inline-flex;
+        width: 400px;
+        height: 370px;
+        grid-area: image-ps;
+       padding-left: 80px;
+    }
+    .title-gray-space{
+        padding: 50px 80px;
+        text-align: left;
+        font-size: 30px;
+    }
+    .title-gray-space button{
+        margin-top: 10%;
+    }
+    .aside-shop{
+        display: grid;
+        grid-template-columns: 280px auto;
+        grid-template-areas: 
+        "aside  product";
+    }
+    .ps3-ps4-products-ft{
+        grid-area: product;
+        margin-left: 2%;
+    }
+    aside{
+        display: block;
+        grid-area: aside;
+    }
+    .ps3{
+        margin: 0 auto;
+        width: 370px;
+        height: 180px;
+
+    }
+    .img-ps3 img,.img-ps4 img{
+        width: 150px;
+        height: 150px;
+    }
+    .figcaption-ps3{
+        width: 180px;
+        height: 175px;
+    }
+    .ps4{
+        width: 370px;
+        height: 180px;
+    }
+    .aside li{
+        margin-bottom: 2%;
+        background-color: #f3f5f9;
+        width: 250px;
+    }
+    .aside a{
+        text-decoration: none;
+        color: #4b5871;
+    }
+    .aside select{
+        border: none;
+        background-color: transparent;
+        font-size: 17px;
+        color: #4b5871;
+        cursor: pointer;
+    }
+    .aside h3{
+        background-color: #b8defe;
+        text-align: center;
+        width: 250px;
+        height: 40px;
+        border-radius: 5px 5px 0 0;
+    }
+    .products-all{
+        margin-left: 10%;
+        grid-template-areas: 
+        "title-p title-p title-p"
+        "control audifono juego";
+    }
+    .top-products{
+        margin-left: 8%;
+        grid-template-areas: 
+        "titulo-top titulo-top titulo-top"
+        "mando-r juego1 juego2"
+        "load load load";
+    }
+    .control-r, .juego1, .juego2, .juego3{
+        width: 200px;
+        height: 300px;
+    }
+    .juego3{
+        display: none;
+    }
+    .add-all{
+        width: 140px;
+    height: 35px;
+    }
+    .img-central-all{
+        width: 170px;
+        height: 170px;
+    }
+    .load-more{
+        margin-left: 35%;
+    }
+    .brands{
+        display: grid;
+        grid-template-areas: 
+        "brand1 brand2 brand3";
+    }
+    .brand1,.brand2, .brand3{
+        grid-area: brand1;
+        padding: 15px 40px 15px 40px;
+        margin: 0 auto;
+    }
+    .brand2{
+        grid-area: brand2;
+    }
+    .brand3{
+        grid-area: brand3;
+    }
+    footer{
+        width: 80%;
+        margin-left: 150px;
+        height: auto;
+    }
+    .titles-ft{
+        padding: 0;
+    }
+}
