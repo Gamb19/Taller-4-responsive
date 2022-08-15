@@ -17,6 +17,12 @@ header{
 #check{
     display: none;
 }
+select{
+    border: none;
+}
+span{
+    color: #4E97FD;
+}
 
 /**Mobile**/
 @media (min-width:468px) {
@@ -48,55 +54,9 @@ header{
     .bazar-busc{
         display: none;
     }
-    .buscador{
-    margin: 3% 0 0 3%;
-    display: grid;
-    grid-template-areas: 
-      "buscador menu-ha";
-    
-    }
-    .info-busc{
-        margin-top: 1%;
-        grid-area: buscador;
-    }
-    .main-input-busc{
-        width: 377px;
-        height: 50px;
-        border-radius: 100px;
-        border: 1px solid #dfe1e5;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .input-main{
-        margin-right: 5%;
-    }
-    .main-input-busc input{
-       margin: 0 0 0 2%;
-        width: 280px;
-        height: 25px;
-        outline: none;
-        border: none;
-    }
-    .main-input-busc button{
-        font-size: 18px;
-        color: white;
-        cursor: pointer;
-        padding: 13px 12px;
-        border-radius: 0 100px 100px 0;
-        background: #4E97FD;
-        border: 1px solid #3C74C2;
-    }
-    .logo-main{
-        display: none;
-    }
-    .usuarios{
-        display: none;
-    }
     .menu{
         padding: 10px 0;
         grid-area: menu-ha;
-    
     }
     .menu img{
         width: 40px;
@@ -134,12 +94,6 @@ header{
         left: 0;
         top: 3;   
     }
-    .list-nav-esc{
-        display: none;
-    }
-    .categories{
-        display: none;
-    }
     .gray-space{
         padding: 15px 0;
         background-color: #efefef;
@@ -163,238 +117,211 @@ header{
     .img-gray-space{
         display: none;
     }
-    .aside-shop {
-        padding: 20px 20px;
+    .buscador{
+        display: flex;
+        flex: 100;
+    }
+    .buscador-header{
+        flex: 88;
+    }
+    .input-main{
+        margin: 5% 0 5% 2%;
+    }
+    .main-input-busc{
+        width: 370px;
+        border: 1px solid #c6c6c6;
+        border-radius: 100px;
+    }
+    .main-input-busc input{
+        width: 280px;
+        margin: 0 2% 0 2%;
+        border: none;
+        outline: none;
+    }
+    .main-input-busc button{
+        padding: 13px;
+        border-radius: 0 100px 100px 0;
+        border: none;
+        color: white;
+        background-color: #4E97FD;
+    }
+    .menu{
+        flex: 12;
+        margin: 3% 0 0 0;
+    }
+    .bazar-busc{
+        display: none;
+    }
+    .list-nav-esc{
+        display: none;
+    }
+    .usuarios{
+        display: none;
     }
     aside{
         display: none;
     }
-    .ps3{
-       display: flex;
-       margin-bottom: 5%;
-       border: 2px solid #f8f8f9;
-       border-radius: 10px;
-    }
-    .figcaption-ps3{
-        border-radius: 20px 100px 100px 20px;
-        background-color: #b8defe;
-        height: 200px;
-        text-align: center;
-        padding-top: 25%;
-       width: 200px;
-    }
-    .img-ps3 img,.img-ps4 img{
-        width: 230px;
-        height: 210px;
-    }
-    .ps4{
-        display: flex;
-        margin-bottom: 5%;
-        border: 2px solid #f8f8f9;
-        border-radius: 10px;
-    }
-    .figcaption-ps4{
-        height: 200px;
-        text-align: center;
-        padding-top: 25%;
-       width: 200px;
-    }
-    .figcaption-ps4 button{
+    .brands-arti{
         margin-top: 5%;
-        cursor: pointer;
+    }
+    .ps5-art, .ps4-art{
+        display: flex;
+        margin: 0 0 5% 5%;
+        border: 1px solid #c6c6c6;
         border-radius: 5px;
+        width: 420px;
+    }
+    .ps5-art img, .ps4-art img{
+        width: 60%;
+        height: 200px;
+    }
+    .ps5-art div{
+        background-color: #4E97FD;
+        border-radius: 0 100px 100px 0;
+    }
+    .ps4-art-sub{
+        margin-top: 12%;
+    }
+    .people p{
+        margin-top: 40%;
+    }
+    .ps4-art button{
         width: 120px;
         height: 40px;
         background-color: #4E97FD;
         color: white;
         border: none;
+        border-radius: 5px;
+        margin-top: 10%;
     }
-    .products-all{
-        padding-top: 10px;
-        display: grid;
-        grid-template-areas: 
-        "title-p title-p"
-        "control audifono";
+    .product1, .product2, .product3, .product4{
+        margin: 5% 15%;
+        border: 1px solid #c6c6c6;
+        border-radius: 10px;
     }
-    .top-products-title{
-        grid-area: title-p;
-    }
-    .control, .audifono, .juego, .control-r, .juego1, .juego2, .juego3{
-        width: 200px;
+    .img-products{
+        width: 300px;
         height: 300px;
-        grid-area: control;
-        margin-top: 8%;
-        border: 2px solid #eef2f5;
+        margin: 2% 5%;
+    }
+    .etiqueta{
+        background-color: #4E97FD;
+        border-radius: 0 100px 100px 0;
+        width: 50px;
+        color: white;
+    }
+    .info-products{
+        border-top: 1px solid #c6c6c6;
+        margin: 5% 0 8% 0;
+    }
+    .corazon{
+        height: 10px;
+    }
+    .add{
+        width: 300px;
+        height: 20px;
+        background-color: #4E97FD;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .corazon{
+        background-color: #4E97FD;
+        width: 20px;
+        height: 20px;
+        border: none;
+        cursor: pointer;
         border-radius: 5px;
     }
-    .control figcaption, .audifono figcaption, .juego figcaption, .control-r figcaption, .juego1 figcaption, .juego2 figcaption, .juego3 figcaption{
-        border: 1px solid #eef2f5;
+    .products-all{
+        display: flex;
     }
-    .audifono{
-        grid-area: audifono;
+    .product-1-all, .product-2-all, .product-3-all{
+        border: 1px solid #c6c6c6;
+        border-radius: 6px;
     }
-    .juego{
-        grid-area: juego;
+    .product-2-all, .product-3-all{
+        margin-left: 15%;
+    }
+    .product-3-all{
         display: none;
     }
-    .etiqueta{ background-color: #4E97FD;
-    width: 60px;
-    border-radius: 5px;
-    color: white;
-    font-size: 15px;
-    text-align: center;
+    .img-products-all{
+        width: 130px;
+        height: 130px;
+    }
+    .add-all{
+        background-color: #4E97FD;
+        color: white;
+        border: none;
+        width: 110px;
+    }
+    .brand-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .brand-container h3{
+        color: #4E97FD;
+    }
+    .brand-1,.brand-2, .brand-3{
+       margin-top: 5%;
+       width: 90%;
+       border: 1px solid #c6c6c6;
+       border-radius: 10px;
+       padding: 40px;
+    }
+    footer{
+        background-color: #0f3460;
+        border-radius: 10px;
+        width: 90%;
+        margin: 8% auto 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .titles-ft{
+        margin-bottom: 10%;
+    }
+    .titles-ft h2{
+        color: white;
+        padding: 20px 10px;
+        font-size: 40px;
+    }
+    .p-bazar-ft{
+        color: white;
+        padding: 5px 10px;
+    }
+    .play, .ios{
+        display: flex;
+       margin: 3% 5% 0 0;
+       background-color: #0C2A4D;
+       border-radius: 5px;
+    }
+    .apps{
+        display: flex;
+    }
+    .fa-google-play, .fa-app-store-ios{
+        padding: 8px 5px 0 0;
+    }
+    .apps p, .apps h3,.icons-ft a{
+        color: white;
+    }
+    .apps p{
+        font-size: 10px;
+    }
+    .icons-ft{
+        padding: 0 10px;
+    }
+    .icons-ft li{
+        margin-bottom: 5%;
+    }
+   
+
 }
-.img-central{
-    width: 170px;
-    height: 170px;
-}
-.add{
-    background-color: #4E97FD;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 140px;
-    height: 35px;
-    cursor: pointer;
-    margin-bottom: 2%;
-}
-span{
-    color: #4E97FD;
-}
-.corazon{
-    background-color: #4E97FD;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 35px;
-    border-radius: 5px;
-}
-.top-products{
-   padding: 5% 0 0 3%;
-    display: grid;
-    grid-template-areas: 
-    "titulo-top"
-    "mando-r"
-    "juego1"
-    "juego2"
-    "juego3"
-    "load";
-}
-.top-products-title2{
-    grid-area: titulo-top;
-}
-.control-r, .juego1, .juego2, .juego3{
-    margin-top: 6%;
-    grid-area: mando-r;
-    width: 400px;
-    height: 400px;
-}
-.control-r figcaption, .juego1 figcaption, .juego2 figcaption, .juego3 figcaption{
-    margin-top: 2%;
-}
-.img-central-all{
-    width: 280px;
-    height: 260px;
-    margin-left: 10%;
-}
-.add-all{
-    background-color: #4E97FD;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 365px;
-    height: 35px;
-    cursor: pointer;
-    margin-bottom: 2%;
-}
-.juego1{
-    grid-area: juego1;
-}
-.juego2{
-    grid-area: juego2;
-}
-.juego3{
-    grid-area: juego3;
-}
-.load-more{
-    grid-area: load;
-   margin: 5% 0 0 24%;
-}
-.load-more button{
-    margin-top: 5%;
-     cursor: pointer;
-     border-radius: 5px;
-     width: 150px;
-     height: 40px;
-     background-color: #4E97FD;
-     color: white;
-     border: none;
-}
-.brands{
-    margin-top: 5%;
-}
-.brand1,.brand2, .brand3{
-    text-align: center;
-    border: 2px solid #eef2f5;
-    padding: 30px 150px 30px 150px;
-    margin-top: 5%;
-    border-radius: 5px;
-}
-.brand1 figure img, .brand2 figure img, .brand3 figure img{
-    background-color: #f6f9fc;
-    padding: 10px;
-    border-radius: 100px;
-}
-footer{
-    background-color: #0f3460;
-    border-radius: 15px;
-    margin-top: 10%;
-    height: 550px;
-}
-.titles-ft{
-    margin:5% 0 0 10%;
-    padding-top: 10%;
-}
-.titles-ft figure img{
-    width: 32px;
-    height: 32px;
-}
-.titles-ft h2{
-    color: white;
-    margin:3%;
-    font-size: 40px;
-}
-.titles-ft p{
-    color: white;
-    margin:3%;
-}
-.titles-ft figure{
-    display: inline-block;
-    margin: 4% 10% 0 0;
-    background-color: #0c2a4d;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 3%;
-    padding: 6px;
-}
-.titles-ft figcaption{
-    display: inline-block;
-    color: white;
-}
-.titles-ft figcaption p{
-    font-size: 13px;
-}
-.icons-ft{
-    margin: 5% 0 0 12%;
-}
-.icons-ft ul li{
-    margin-bottom: 3%;
-}
-.icons-ft a{
-    text-decoration: none;
-    color: white;
-}
-}
+
 
 /**Tablet**/
 
@@ -405,23 +332,9 @@ footer{
     .menu ul{
         top: 150px;
     }
-    .buscador{
-        margin: 3% 0 0 3%;
-        display: grid;
-        grid-template-areas: 
-          "buscador buscador menu-ha";
-        
-        }
     .menu img{
         width: 40px;
         height: 40px;
-    }
-    .main-input-busc {
-        width: 600px;
-       margin-left: 3%;
-    }
-    .main-input-busc input{
-        width: 497px;
     }
     .gray-space{
         display: grid;
@@ -445,119 +358,100 @@ footer{
     .title-gray-space button{
         margin-top: 10%;
     }
+    .input-main{
+        margin: 3% 0 3% 2%;
+    }
+    .main-input-busc{
+        width: 650px;
+        flex:80;
+    }
+    .main-input-busc input{
+        width: 549px;
+    }
+    .main-input-busc button{
+        padding: 13px;
+    }
+    .menu{
+        flex: 10;
+        margin: 2% 0 0 0;
+    }
     aside{
         display: none;
     }
-
-    .ps3-ps4-products{
-        grid-area: plays;
-        display: grid;
-        grid-template-rows: 200px;
-        grid-template-areas: "ps3 ps4";
-    }
-    .ps3{
-        margin-right: 1%;
-        grid-area: ps3;
-    }
-    .figcaption-ps3{
-        height: 170px;
-    }
-    .ps4{
-        grid-area: ps4;
-    }
-    .ps4 img, .img-ps3 img{
-        width: 170px;
-        height: 170px;
-    }
-    .juego{
-        display: block;
-    }
-    .products-all{
-        grid-template-areas: 
-        "title-p title-p title-p"
-        "control audifono juego";
-    }
-    .top-products{ 
-           grid-template-areas: 
-             "titulo-top titulo-top"
-             "mando-r juego1"
-             "juego2 juego3"
-             "load load";
-         }
-    
-     .control-r, .juego1, .juego2, .juego3{
-        margin-top: 6%;
-        width: 200px;
-        height: 200px;
-    }
-    .img-central-all{
-        margin: 0;
-        margin-left: 10%;
-        width: 165px;
-        height: 165px;
-    }
-    .control-r,.juego1,.juego2,.juego3{
-        width: 300px;
-        height: 300px;
-    }
-    .add-all{
-        width: 260px;
-    }
-    .load-more{
-        margin-left: 33%;
-    }
-    .brand1,.brand2, .brand3{
-         border: 2px solid #eef2f5;
-         padding: 30px 150px 30px 150px;
-         margin-top: 5%;
-         border-radius: 5px;
-     }
-     .brand1 figure, .brand2 figure, .brand3 figure{
+    .brands-arti{
         display: flex;
     }
-    footer{
+    .top-all-products{
+        margin: 5% 0 0 5%;
         display: grid;
         grid-template-areas: 
-        "app-s help";
+        "title title"
+        "product1 product2"
+        "product3 product4";
     }
-    .titles-ft{
-        grid-area: app-s;
+    .load{
+        grid-area: button-a;
     }
-    .icons-ft{
-        grid-area: help;
+    .top-new-pro{
+        grid-area: title;
     }
-    .icons-ft{
-        padding-top: 60px;
+    .product1{
+        grid-area: product1;
     }
-    .icons-ft ul li{
-        padding-bottom: 10px;
+    .product2{
+        grid-area: product2;
+    }
+    .product3{
+        grid-area: product3;
+    }
+    .product4{
+        grid-area: product4;
+    }
+    .img-products{
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    .add{
+        width: 200px;
+    }
+    .all-products{
+        margin-left: 5%;
+    }
+    .product-3-all{
+        display: block;
+    }
+    .brand-container{
+        text-align: left;
+    }
+    .brand-1,.brand-2, .brand-3{
+        display: flex;
+    }
+    .fa-solid, .fa-truck{
+       padding: 20px 20px 0 0 ;
     }
     footer{
-        height: auto;
+        flex-direction: row;
+        flex: 100;
     }
     .titles-ft{
-        padding: 0;
+        flex:50;
+        padding: 0 15px;
+    }
+    .titles-ft h2{
+        padding: 0 10px;
+    }
+    .icons-ft{
+        flex: 50;
+        padding: 30px;
+    }
+    .icons-ft li{
+        margin-bottom: 7%;
     }
 }
 
 /**Pc**/
 @media (min-width:1048px) {
-    body{
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "none footer footer"
-    }
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
     .sec-esc{
         display: block;
     }
@@ -601,76 +495,11 @@ footer{
     /**Fin de header**/
 
      /**Main**/
-     .buscador{
-        margin: 1% 0 3% 0;
-        display: grid;
-        grid-template-areas: 
-        "title buscador usuarios";
-    }
-    .bazar-busc{
-        display: inline-flex;
-        grid-area: title;
-    }
-    .bazar-busc h2{
-    font-size: 50px;
-    padding: 0 50px;
-    margin: 1% 0 0 15%;
-    color: #0f3460;
-    }
-    .info-busc{
-        display: flex;
-        grid-area: buscador;
-    }
-    .main-input-busc {
-        width: 710px;
-       margin-left: 3%;
-    }
-    .main-input-busc input{
-        width: 606px;
-    }
-    .usuarios{
-        display: inline-flex;
-        grid-area: usuarios;
-        justify-content: end;
-        gap: 20px;
-        padding: 13px 0 13px 10px;
-     }
-    .usuarios img{
-        width: 40px;
-        height: 40px;
-       gap: 20px;
-    }
     .menu input, .menu label{
         display: none;
     }
     .menu nav{
         display: block;
-    }
-    .list-nav-esc{
-        display: grid;
-        margin-left: 5%;
-        grid-template-areas: 
-        "categories categories lista";
-    }
-    .categories{
-        display: inline-flex;
-        background-color: #f6f9fc;
-        padding: 6px 0;
-        width: 300px;
-        grid-area: categories;
-    }
-    .categories p{
-     padding: 10px 15px;
-    }
-    
-    .list-nav-esc ul{
-        grid-template-areas: lista;
-        display: flex;
-        gap: 30px;
-        margin-top: 2%;
-    }
-    .list-nav-esc nav ul select{
-        border: none;
     }
     .gray-space{
         display: grid;
@@ -694,53 +523,96 @@ footer{
     .title-gray-space button{
         margin-top: 10%;
     }
-    .aside-shop{
-        display: grid;
-        grid-template-columns: 280px auto;
-        grid-template-areas: 
-        "aside  product";
+    .bazar-busc{
+        display: block;
     }
-    .ps3-ps4-products-ft{
-        grid-area: product;
-        margin-left: 2%;
+    .buscador{
+        width: 100%;
+    }
+    .usuarios{
+        display: block;
+    }
+    .list-nav-esc{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .buscador-header{
+        display: flex;
+        flex:100;
+        margin: 1%;
+    }
+    .bazar-busc{
+        flex:20;
+    }
+    .bazar-busc h2{
+        font-size: 40px;
+        color: #0f3460;
+        text-align: center;
+    }
+    .input-main{
+        margin: 0 0 0 12%
+    }
+    .info-busc{
+        flex: 60;
+        margin: 0;
+    }
+    .usuarios{
+        flex:20;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .usuarios img{
+        margin: 0 8% 0 12%;
+    }
+    .list-nav-esc{
+        display: flex;
+        margin: 1%;
+        justify-content: space-between;
+    }
+    .list-nav-esc nav{
+        margin-right: 5%;
+    }
+    .list-nav-esc nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .categories{
+        display: flex;
+        margin-left: 5.5%;
+        background-color: #f6f9f6;
+        justify-content: space-between;
+        flex: 10;
+    }
+    .categories p{
+        text-align: left;
+    }
+    .list-nav-esc nav{
+    margin: 0 5% 0 10%;
+    flex: 30;
+    }
+    .aside-container{
+        display: flex;
+        margin: 3% 5% 0 5%;
+        flex: 100;
+    }
+    .select-aside{
+        display: flex;
     }
     aside{
         display: block;
-        grid-area: aside;
+        flex: 10;
     }
-    .ps3{
-        margin: 0 auto;
-        width: 370px;
-        height: 180px;
-
-    }
-    .img-ps3 img,.img-ps4 img{
-        width: 150px;
-        height: 150px;
-    }
-    .figcaption-ps3{
-        width: 180px;
-        height: 175px;
-    }
-    .ps4{
-        width: 370px;
-        height: 180px;
+    aside a{
+    text-decoration: none;
+    color: #4b5871;
     }
     .aside li{
-        margin-bottom: 2%;
         background-color: #f3f5f9;
-        width: 250px;
-    }
-    .aside a{
-        text-decoration: none;
-        color: #4b5871;
-    }
-    .aside select{
-        border: none;
-        background-color: transparent;
-        font-size: 17px;
-        color: #4b5871;
-        cursor: pointer;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        height: 30px;
     }
     .aside h3{
         background-color: #b8defe;
@@ -749,59 +621,101 @@ footer{
         height: 40px;
         border-radius: 5px 5px 0 0;
     }
-    .products-all{
-        margin-left: 10%;
-        grid-template-areas: 
-        "title-p title-p title-p"
-        "control audifono juego";
-    }
-    .top-products{
-        margin-left: 8%;
-        grid-template-areas: 
-        "titulo-top titulo-top titulo-top"
-        "mando-r juego1 juego2"
-        "load load load";
-    }
-    .control-r, .juego1, .juego2, .juego3{
-        width: 200px;
-        height: 300px;
-    }
-    .juego3{
-        display: none;
-    }
-    .add-all{
-        width: 140px;
-    height: 35px;
-    }
-    .img-central-all{
-        width: 170px;
-        height: 170px;
-    }
-    .load-more{
-        margin-left: 35%;
-    }
-    .brands{
+    .brands-arti{
         display: grid;
         grid-template-areas: 
-        "brand1 brand2 brand3";
+        "ps5 ps4";
+        margin: 0;
     }
-    .brand1,.brand2, .brand3{
-        grid-area: brand1;
-        padding: 15px 40px 15px 40px;
+    .ps5-art img, .ps4-art img{
+       width: 40%;
+    }
+    .ps5-art, .ps4-art{
+        display: flex;
+        width: 400px;
+        margin: 0;
+    }
+    .ps5-art{
+        grid-area: ps5;
+    }
+    .ps4-art{
+        grid-area: ps4;
+    }
+    .ps4-art{
         margin: 0 auto;
     }
-    .brand2{
-        grid-area: brand2;
+    .brands{
+        flex: 90;
+        margin-left: 5%;
     }
-    .brand3{
-        grid-area: brand3;
+    .people p{
+        margin-top: 30%;
+    }
+    .img-products-all{
+        width: 200px;
+        height: 200px;
+    }
+    .product4{
+        display: none;
+    }
+    .top-all-products{
+        margin: 0;
+        grid-template-areas: 
+        "title title title"
+        "product1 product2 product3"
+    }
+    .all-products{
+        margin: 5% 0;
+        display: grid;
+        grid-template-areas: 
+        "title-a title-a title-a"
+        "products-a products-a products-a";
+    }
+    .products-all{
+        grid-area: products-a;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        "produ1 produ2 produ3";
+    }
+    .info-all-pd{
+        grid-area: title-a;
+    }
+    .product-1-all{
+        grid-area: produ1;
+    }
+    .product-2-all{
+        grid-area: produ2;
+    }
+    .product-3-all{
+        grid-area: produ3;
+    }
+    .product-1-all,.product-2-all,.product-3-all,.product1,.product2,.product3{
+        width: 200px;
+        margin: 5% 0;
+    }
+    .add{
+        width: 150px;
+    }
+    .load{
+        margin: 0 auto;
+    }
+    .brand-container{
+        flex-direction: row;
+        margin-right: 10%;
+    }
+    .brand-1, .brand-2, .brand-3{
+        padding: 20px 10px 10px 20px;
+        margin-right: 3%;
     }
     footer{
-        width: 80%;
-        margin-left: 150px;
-        height: auto;
+        width: 60%;
+        margin: 8% auto 0 27%;
     }
     .titles-ft{
-        padding: 0;
+        padding: 30px 30px 0 30px;
+    }
+    .icons-ft{
+        padding: 70px 0 0 0;
     }
 }

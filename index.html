@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/0009fe7d76.js" crossorigin="anonymous"></script>
     <title>Responsive</title>
   </head>
   <body>
@@ -56,11 +57,13 @@
     </header>
     <main>
       <section class="buscador">
-        <div class="bazar-busc">
-          <h2>bazar</h2>
-        </div>
+
+        <div class="buscador-header">
+          <div class="bazar-busc">
+            <h2 class="logo-main">bazar</h2>
+          </div>
+          
         <div class="info-busc">
-          <h2 class="logo-main">bazar</h2>
           <div class="input-main">
             <div class="main-input-busc">
               <input type="text" placeholder="Searching for..." />
@@ -68,58 +71,61 @@
             </div>
           </div>
         </div>
-        <div class="usuarios">
-          <a href="#">
+          <div class="usuarios">
+            <a href="#">
             <img src="./img/usuario.png" alt="" />
-          </a>
-          <a href="#">
+              </a>
+            <a href="#">
             <img src="./img/compra.png" alt="" />
-          </a>
-        </div>
-        <div class="menu">
-          <input type="checkbox" id="check" />
-          <label for="check">
-            <img src="./img/menu.png" />
-          </label>
-          <ul class="ul-check">
-            <li>
-              <select class="lista-select lista1">
-                <option value="Home">Home</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista1">
-                <option value="Mega menu">Mega menu</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista1">
-                <option value="Full screen menu">Full screen menu</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select">
-                <option value="pages">Pages</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista2">
-                <option value="User account">User account</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista2">
-                <option value="Vendor account">Vendor account</option>
-              </select>
-            </li>
-          </ul>
-        </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="menu">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <img src="./img/menu.png" />
+        </label>
+        <ul class="ul-check">
+          <li>
+            <select class="lista-select lista1">
+              <option value="Home">Home</option>
+            </select>
+          </li>
+          <li>
+            <select class="lista-select lista1">
+              <option value="Mega menu">Mega menu</option>
+            </select>
+          </li>
+          <li>
+            <select class="lista-select lista1">
+              <option value="Full screen menu">Full screen menu</option>
+            </select>
+          </li>
+          <li>
+            <select class="lista-select">
+              <option value="pages">Pages</option>
+            </select>
+          </li>
+          <li>
+            <select class="lista-select lista2">
+              <option value="User account">User account</option>
+            </select>
+          </li>
+          <li>
+            <select class="lista-select lista2">
+              <option value="Vendor account">Vendor account</option>
+            </select>
+          </li>
+        </ul>
+      </div>
       </section>
 
       <section class="list-nav-esc">
         <div class="categories">
-          <img src="./img/categorias.png" />
+          <i class="fa-solid fa-table-cells-large"></i>
           <p>Categories</p>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
         <nav>
           <ul class="ul-check">
@@ -171,482 +177,483 @@
         </div>
       </section>
 
-      <section class="aside-shop">
+      <section class="aside-container">
         <aside class="aside">
+          
           <h3>Categories</h3>
           <ul>
             <li>
-              <img src="./img/casa.png" />
+              <i class="fa-solid fa-house"></i>
               <a href="#"> Home </a>
             </li>
 
             <li>
-              <img src="./img/trofeo.png" />
+              <i class="fa-solid fa-trophy"></i>
               <a href="#"> Popular products </a>
             </li>
 
             <li>
-              <img src="./img/trending.png" />
+              <i class="fa-solid fa-chart-line"></i>
               <a href="#"> All products </a>
             </li>
 
+            
             <li class="select-aside">
-              <img src="./img/beauty.png" />
-              <select>
-                <option value="Health and beauty">Health and beauty</option>
-              </select>
+              <i class="fa-regular fa-video"></i>
+                <p>Mascara</p>
+                <i class="fa-solid fa-angle-down"></i>
             </li>
+
             <li class="select-aside">
-              <img src="./img/mascara.png" />
-              <select>
-                <option value="mascara">Mascara</option>
-              </select>
+              <i class="fa-solid fa-location-arrow"></i>
+              <p>Mascara</p>
+              <i class="fa-solid fa-angle-down"></i>
             </li>
+
             <li class="select-aside">
-              <img src="./img/powder.png" alt="" />
-              <select name="" id="">
-                <option value="powder">Powder</option>
-              </select>
+              <i class="fa-solid fa-graduation-cap"></i>
+                <p >Lotion</p>
+                <i class="fa-solid fa-angle-down"></i>
             </li>
+
             <li class="select-aside">
-              <img src="./img/lotion.png" alt="" />
-              <select name="" id="">
-                <option value="Lotion">Lotion</option>
-              </select>
+              <i class="fa-brands fa-connectdevelop"></i>
+                <p >Makeup</p>
+                <i class="fa-solid fa-angle-down"></i>
             </li>
+
             <li class="select-aside">
-              <img src="./img/beauty.png" alt="" />
-              <select name="" id="">
-                <option value="Makeup">Makeup</option>
-              </select>
+              <i class="fa-solid fa-bell-concierge"></i>
+                <p>Lipstick</p>
+              <i class="fa-solid fa-angle-down"></i>
             </li>
+
             <li class="select-aside">
-              <img src="./img/lipstick.png" />
-              <select>
-                <option value="Lipstick">Lipstick</option>
-              </select>
+              <i class="fa-solid fa-anchor-circle-exclamation"></i>
+                <p>Face mask</p>
+                <i class="fa-solid fa-angle-down"></i>
             </li>
             <li>
-              <img src="./img/termometro.png" alt="" />
+              <i class="fa-solid fa-plug"></i>
               <a href="#"> Digital Thermomether </a>
             </li>
             <li>
-              <img src="./img/Oxygen.png" alt="" />
+              <i class="fa-solid fa-dumpster"></i>
               <a href="#"> Oxygen pump </a>
             </li>
             <li>
-              <img src="./img/lense.png" alt="" />
+              <i class="fa-solid fa-wrench"></i>
               <a href="#"> Lense case kit </a>
             </li>
             <li>
-              <img src="./img/mandala.png" alt="" />
+              <i class="fa-solid fa-globe"></i>
               <a href="#"> Automotive </a>
             </li>
           </ul>
+        </div>
         </aside>
-
-        <div class="ps3-ps4-products-ft">
-          <div class="ps3-ps4-products">
-            <div class="ps3">
-              <figure>
-                <figcaption class="figcaption-ps3">
-                  <img src="./img/manos.png" alt="" class="manos-p" />
-                  <p class="manos-p">
-                    Our pharmaciest are<br />
-                    here to help people
-                  </p>
-                </figcaption>
-              </figure>
-              <div class="img-ps3">
-                <img src="./img/ps3.png" alt="" />
-              </div>
-            </div>
-
-            <div class="ps4">
-              <figure>
-                <figcaption class="figcaption-ps4">
-                  <p class="manos-p">
-                    Our pharmaciest are<br />
-                    here to help people
-                  </p>
-                  <button>shop now</button>
-                </figcaption>
-              </figure>
-              <div class="img-ps4">
-                <img src="./img/ps4.png" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="products-all">
-            <div class="top-products-title">
-              <h2>Top products</h2>
-              <p>Best deal with medical and beauties items</p>
-            </div>
-
-            <div class="control">
-              <div class="etiqueta">8% off</div>
-              <figure>
-                <img src="./img/control.png" alt="" class="img-central" />
-                <figcaption>
-                  <h3>control</h3>
-                  <div class="estrellas">
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                  </div>
-                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                  <button class="add">+ Add to cart</button>
-                  <button class="corazon">
-                    <img src="./img/corazon.png" alt="" />
-                  </button>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="audifono">
-              <div class="etiqueta">8% off</div>
-              <figure>
-                <img src="./img/Audifonos.png" alt="" class="img-central" />
-                <figcaption>
-                  <h3>Audifonos</h3>
-                  <div class="estrellas">
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                  </div>
-                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                  <button class="add">+ Add to cart</button>
-                  <button class="corazon">
-                    <img src="./img/corazon.png" alt="" />
-                  </button>
-                </figcaption>
-              </figure>
-            </div>
-
-
-            <div class="juego">
-              <div class="etiqueta">8% off</div>
-              <figure>
-                <img src="./img/juego.png" alt="" class="img-central" />
-                <figcaption>
-                  <h3>Juegos</h3>
-                  <div class="estrellas">
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                  </div>
-                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                  <button class="add">+ Add to cart</button>
-                  <button class="corazon">
-                    <img src="./img/corazon.png" alt="" />
-                  </button>
-                </figcaption>
-              </figure>
-            </div>
-
-          </div>
-          <div class="top-products">
-            <div class="top-products-title2">
-              <h2>Top products</h2>
-              <p>Best deal with medical and beauties items</p>
-            </div>
-            <div class="control-r">
-              <div class="etiqueta">9% off</div>
-              <figure>
-                <img src="./img/controlR.png" alt="" class="img-central-all" />
-                <figcaption>
-                  <h3>Control rojo</h3>
-                  <div class="estrellas">
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="./img/estrella.png" alt="" />
-                    </a>
-                  </div>
-                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                  <button class="add-all">+ Add to cart</button>
-                  <button class="corazon">
-                    <img src="./img/corazon.png" alt="" />
-                  </button>
-                </figcaption>
-              </figure>
-            </div>
-          
-
-          <div class="juego1">
-            <div class="etiqueta">9% off</div>
-            <figure>
-              <img src="./img/Assasins.png" alt="" class="img-central-all" />
-              <figcaption>
-                <h3>Control rojo</h3>
-                <div class="estrellas">
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                </div>
-                <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                <button class="add-all">+ Add to cart</button>
-                <button class="corazon">
-                  <img src="./img/corazon.png" alt="" />
-                </button>
-              </figcaption>
-            </figure>
-          </div>
-
-
-
-          <div class="juego2">
-            <div class="etiqueta">9% off</div>
-            <figure>
-              <img src="./img/metro.png" alt="" class="img-central-all" />
-              <figcaption>
-                <h3>Control rojo</h3>
-                <div class="estrellas">
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                </div>
-                <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                <button class="add-all">+ Add to cart</button>
-                <button class="corazon">
-                  <img src="./img/corazon.png" alt="" />
-                </button>
-              </figcaption>
-            </figure>
-          </div>
-
-
-          <div class="juego3">
-            <div class="etiqueta">9% off</div>
-            <figure>
-              <img src="./img/nexus.png" alt="" class="img-central-all" />
-              <figcaption>
-                <h3>Control rojo</h3>
-                <div class="estrellas">
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./img/estrella.png" alt="" />
-                  </a>
-                </div>
-                <p><span class="precio">%173.38 </span><del>189.00</del></p>
-
-                <button class="add-all">+ Add to cart</button>
-                <button class="corazon">
-                  <img src="./img/corazon.png" alt="" />
-                </button>
-              </figcaption>
-            </figure>
-          </div>
-
-          
-
-
-
-
-
-        </div>
-        <div class="load-more">
-          <button>
-            Load more...
-          </button>
-        </div>
+     
         <div class="brands">
-          <div class="brand1">
-            <figure class="label-fig">
-              <img src="./img/entrega.png">
-              <figcaption class="label-figcap">
-                <h3 class="precio"><span>Fast Delivery</span></h3>
-                <p>Star from 10$<br> centric approach</p>
-              </figcaption>
-            </figure>
+          <div class="brands-arti">
+
+            <article class="ps5-art">
+              <div class="people">
+                <p>Our Pharmaciests are here to Help People</p>
+              </div>
+              <img src="./img/ps5-brand.png">
+            </article>
+
+            <article class="ps4-art">
+              <div class="ps4-art-sub">
+                <p>BEAUTY PACK</p>
+                <p><strong>CREAM BRIGHT <br> UP TO 25%</strong></p>
+                <button>Shop Now</button>
+              </div>
+              <img src="./img/ps4.png" >
+            </article>
           </div>
 
-          <div class="brand2">
-            <figure class="label-fig">
-              <img src="img/paquete.png">
-              <figcaption class="label-figcap">
-                <h3 class="precio"><span> Delivery</span></h3>
-                <p>Star from 10$<br> centric approach</p>
-              </figcaption>
-            </figure>
-        </div>
-        
-        <div class="brand3">
-          <figure class="label-fig">
-            <img src="./img/auricular.png">
-            <figcaption class="label-figcap">
-              <h3 class="precio"><span>Fast Delivery</span></h3>
-              <p>Star from 10$<br> centric approach</p>
-            </figcaption>
-          </figure>
-      </div>
-     </div>
-      </section>
-    </main>
-    <footer>
-      
-      <div class="titles-ft">
-        <h2>bazar</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quis, animi modi illum incidunt doloremque corrupti quas quibusdam cumque cum veniam obcaecati nam, vitae ipsa expedita. Velit facilis debitis voluptas.
-        </p>
-        <figure>
-          <a>
-            <img src="./img/googleplay.png">
-          </a>
-          <figcaption>
-            <p>Get it on </p>
-            <h3>Google play</h3>
-          </figcaption>
-        </figure>
-        <figure>
-          <a>
-            <img src="./img/appstore.png">
-          </a>
-          <figcaption>
-            <p>Get it on </p>
-            <h3>App store</h3>
-          </figcaption>
-        </figure>
-        </div>
 
-      <div class="icons-ft">
-        <ul>
-          <li>
-            <a href="#">
-              Help center
-            </a>
-          </li>
+          <div class="all-products">
+            <div class="info-all-pd">
+            <h2>All  Products</h3>
+            <p>Best deal with medical and beauty items</p>
+            </div>
+            <div class="products-all"> 
+            <div class="product-1-all">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/control.png" class="img-products-all">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add-all">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            </div>
+            <div class="product-2-all">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/Assasins.png" class="img-products-all">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add-all">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            </div>
 
-          <li>
-            <a href="#">
-              Track your order
-            </a>
-          </li>
+            <div class="product-3-all">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/control.png" class="img-products-all">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add-all">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            </div>
+          </div>
+          <div>
 
-          <li>
-            <a href="#">
-              Corpororate & Bulk purchasing
 
-            </a>
-          </li>
 
-          <li>
-            <a href="#">
-              Returns and refunds
+          </div>
+          </div>
 
-            </a>
-          </li>
+          <div class="top-all-products">
+            <div class="top-new-pro">
+              <h2>Top New Products</h3>
+              <p>Best deal with medical and beauty items</p>
+              <select class="selec-viewAll">
+                <option value="view">View All</option>
+              </select>
+  
+            </div>
+            
+            
+            <div class="product1">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/metro.png" class="img-products">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
 
-          <li>
-            <a href="#">
-              <img src="./img/facebook.png">
-            </a>
-            <a>
-              <img src="./img/instagram.png">
-            </a>
-            <a>
-              <img src="./img/youtube.png">
-            </a>
-            <a>
-              <img src="./img/google.png" alt="">
-            </a>
-          </li>
+
+              </div>
+            </div>
+            <div class="product2">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/controlR.png" class="img-products">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
           
-        </ul>
+          
+            <div class="product3">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/Audifonos.png" class="img-products">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+            </div>
 
+            <div class="product4">
+              <div class="eti-img">
+                <div class="etiqueta">8% off</div>
+                <img src="./img/juego.png" class="img-products">
+              </div>
+              <div class="info-products">
+                <h3>Metro redux</h3>
+                <div class="estrellas">
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/estrella.png" alt="" />
+                  </a>
+                </div>
+                <h3><span>211.00$</span><del> 218.00$</del></h3>
+                <button class="add">+ Add to cart</button>
+                <button class="corazon">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-container">
+            <div class="brand-1">
+            <i class="fa-solid fa-truck"></i>
+            <div>
+              <h3>
+                Fast delivery
+              </h3>
+              <p>
+                Star from $10<br> centric approach
+              </p>
+            </div>
+  
+              </div>
+  
+              <div class="brand-2">
+                <i class="fa-solid fa-box"></i>
+                <div>
+                  <h3>
+                    Pick up
+                  </h3>
+                  <p>
+                    Secure system <br>centric approach
+                  </p>
+                </div>
+                  </div>
+  
+                  <div class="brand-3">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                      <h3>
+                        Online support
+                      </h3>
+                      <p>
+                        24/7 daily<br> centric approach
+                      </p>
+                      
+                    </div>
+                      </div>
+  
+  
+  
+  
+  
+  
+          </div>
+  
+        </div>
+          </div>
+          </div>  
+      </section>
+      </main>
+  <footer>
+      
+    <div class="titles-ft">
+      <h2>bazar</h2>
+      <p class="p-bazar-ft">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quis, animi modi illum incidunt doloremque corrupti quas quibusdam cumque cum veniam obcaecati nam, vitae ipsa expedita. Velit facilis debitis voluptas.
+      </p>
+      <div class="apps">
+      <div class="play">
+        <a>
+          <i class="fa-brands fa-google-play"></i>
+        </a>
+        <div>
+          <p>Get it on </p>
+          <h3>Google play</h3>
+        </div>
       </div>
-    </footer>
-    </footer>
 
+      <div class="ios">
+        <a>
+          <i class="fa-brands fa-app-store-ios"></i>
+        </a>
+        <div>
+          <p>Get it on </p>
+          <h3>App store</h3>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="icons-ft">
+      <ul>
+        <li>
+          <a href="#">
+            Help center
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Track your order
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Corpororate & Bulk purchasing
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Returns and refunds
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="./img/facebook.png">
+          </a>
+          <a>
+            <img src="./img/instagram.png">
+          </a>
+          <a>
+            <img src="./img/youtube.png">
+          </a>
+          <a>
+            <img src="./img/google.png" alt="">
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+</footer>
 
 
   </body>
